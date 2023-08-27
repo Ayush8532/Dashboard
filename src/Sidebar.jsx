@@ -1,0 +1,61 @@
+import React from 'react'
+import {BsCart3,BsGrid1X2Fill,BsFillArchiveFill,BsFillGrid3X3GapFill,BsPeopleFill,BsListCheck,BsMenuButtonWideFill,BsFillGearFill} from 'react-icons/bs'
+import { FaFileAlt } from 'react-icons/fa';
+
+
+const Sidebar = () => {
+  return (
+    <aside id='sidebar'>
+        <div className='sidebar-title'>
+            <div className='sidebar-brand'>
+                <BsFillGearFill className='icon_header'/>HYBRID
+            </div>
+            <span className='icon close_icon'>X</span>            
+        </div>
+        <ul className='sidebar-list'>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsGrid1X2Fill className='icon'/>Dashboard
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsFillArchiveFill className='icon'/>UI Elements
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsFillGrid3X3GapFill className='icon'/>Charts
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsPeopleFill className='icon'/>Tabs & Panels
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsListCheck className='icon'/>Responsive Tables
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsMenuButtonWideFill className='icon'/>Forms
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <BsFillGearFill className='icon'/>Multi Level Dropdown
+                </a>
+            </li>
+            <li className='sidebar-list-item'>
+                <a href="">
+                    <FaFileAlt className='icon'/>Empty Page
+                </a>
+            </li>
+        </ul>
+    </aside>
+  )
+}
+
+export default Sidebar
